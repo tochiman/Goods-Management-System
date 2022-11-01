@@ -1,0 +1,62 @@
+<!--このテキストデータがどの形式で書かれているかを記述します-->
+<!DOCTYPE html>
+
+<!--lang属性にheadタグがどの言語で書かれているかを記述します-->
+
+<head lang="ja">
+    <!--charset属性にこのhtmlファイルがどの文字コードで保存されているかを記述します-->
+    <meta charset="utf-8">
+    <!--ページのタブに表示されるタイトルです-->
+    <title></title>
+    <meta name="width=device-width, initial-scale=1">
+    <!--content属性の内容は検索やURL送信の時に説明文として採用されることがあります-->
+    <meta name="desription" content="">
+    <!--css適用の処理は上から順に行われるので、編集を行う際はcssファイルの順番に注意してください-->
+    <!--デフォルトのスタイルのcss-->
+    <link rel="stylesheet" href="css/destyle.css">
+    <!--メインとなるスタイルのcss-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--デスクトップモニター専用のcss-->
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width: 701px)">
+    <!--モバイルモニター専用のcss-->
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 700px)">
+</head>
+
+<!--フロントの記述は以下に行う-->
+
+<body lang="ja">
+    <!--欄の枠をまとめて移動する用のdivタグ-->
+    <div class="form">
+        <!--action属性の値でフォームの送信先を指定-->
+        <form class="login-form" action="">
+            <!--ロゴ・グループ名-->
+            <a id="icon">
+                <!--ロゴの画像ファイルのリンク-->
+                <img id="icon-pic" src="img/circle.svg">
+            </a>
+            <!--タイトル-->
+            <p class="login-title">ログイン</p>
+            <!--ユーザーネームの入力欄-->
+            <input type="text" placeholder="メールアドレス">
+            <!--パスワードの入力欄-->
+            <input type="password" placeholder="パスワード">
+            <!--ログインボタン-->
+            <div class="login-button">
+                <buttom>次へ</buttom>
+            </div>
+            <!--水平線・文章・水平線-->
+            <hr class="line">
+            <p class="other-account">または下記からログインする</p>
+            <!--Googleログインページへの画像・リンク-->
+            <a id="google_single-sign-on">
+                <img id="google_sign-in_button" src="img/Google-button.png">
+            </a>
+        </form>
+        <div class="annotation">
+            <a class="privacy-item" href="https://google.com">
+                <span class="privacy-link">プライバシーポリシー</span>
+                <img id="new-page" src="img/open_new-page.svg">
+            </a>
+        </div>
+    </div>
+</body>
