@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--このテキストデータがどの形式で書かれているかを記述-->
+
+
+<!--バックの記述-->
+
+<head lang="ja">
+    <!--lang属性にheadタグがどの言語で書かれているかを記述-->
+    <meta charset="utf-8">
+    <!--charset属性にこのhtmlファイルがどの文字コードで保存されているかを記述-->
+    <title>ログイン</title>
+    <!--ページのタブに表示されるタイトル-->
+    <meta name="width=device-width, initial-scale=1">
+    <!--デバイスの画面の大きさを参照するように指定-->
+    <meta name="desription" content="">
+    <!--content属性の内容は検索やURL送信の時に説明文として採用される-->
+
+    <!--css適用の処理は上から順に行われるので、編集を行う際はcssファイルの順番に注意-->
+    <link rel="stylesheet" href="assets/css/destyle.css">
+    <!--デフォルトのスタイルのcss-->
+    <link rel="stylesheet" href="assets/css/desktop.css" media="(min-width: 701px)">
+    <!--デスクトップモニター専用のcss-->
+    <link rel="stylesheet" href="assets/css/mobile.css" media="(max-width: 700px)">
+    <!--モバイルモニター専用のcss-->
+</head>
+
+
+<!--フロントの記述-->
+
+<body lang="ja">
+    <!--lang属性にheadタグがどの言語で書かれているかを記述-->
+
+    <!--ヘッダー-->
+    <header>
+        <nav>
+            <a href="">
+                <h1>宇都宮コーポレーション</h1>
+            </a>
+            <ul>
+                <li><a href="">企業理念</a></li>
+                <li><a href="">功績</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form">
+        <!--欄の枠をまとめて移動する用のdivタグ-->
+        <form class="login-form" action="">
+            <!--action属性の値でフォームの送信先を指定-->
+            <a id="icon">
+                <!--ロゴ・グループ名-->
+                <img id="icon-pic" src="assets/img/circle.svg">
+                <!--ロゴの画像ファイルのリンク-->
+            </a>
+            <h1 class="login-title">ログイン</h1>
+            <!--タイトル-->
+            <input type="text" placeholder="メールアドレス">
+            <!--ユーザーネームの入力欄-->
+            <!--パスワードの入力欄-->
+            <input type="password" placeholder="パスワード">
+            <!--ログインボタン-->
+            <div class="login-button">
+                <buttom>次へ</buttom>
+            </div>
+            <!--水平線・文章・水平線-->
+            <hr class="line">
+            <p class="other-account">または下記からログインする</p>
+            <!--Googleログインページへの画像・リンク-->
+            <a id="google_single-sign-on">
+                <img id="google_sign-in_button" src="assets/img/Google-button.png">
+            </a>
+        </form>
+        <div class="annotation">
+            <a class="privacy-item" href="https://google.com">
+                <span class="privacy-link">プライバシーポリシー</span>
+                <img id="new-page" src="assets/img/open_new-page.svg">
+            </a>
+        </div>
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <p><small>&copy; 2022 Utunomiya-coporation</small></p>
+        <!--コピーライトをsmallタグで書くのは慣例的なもの。-->
+        <ul>
+            <li><a href="">お問い合わせ</a></li>
+            <li><a href="">プライバシーポリシー</a></li>
+        </ul>
+    </footer>
+</body>

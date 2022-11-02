@@ -1,0 +1,227 @@
+/*
+1.全体の記述方法
+
+セレクタ {
+    プロバティ1: 値1;
+    プロバティ2: 値2;
+}
+
+
+2.セレクタの記述方法(タグはそのまま。classはクラス名の前にドット(ピリオド)"."、idはシャープ"#"を入れる。)
+(a)タグ
+body {
+    =====
+}
+
+div {
+    =====
+}
+
+(b)属性(classの場合)
+.data {
+    =====
+}
+
+.login-page {
+    =====
+}
+
+(c)属性(idの場合)
+#icon-picture {
+    =====
+}
+
+#send-button {
+    =====
+}
+
+
+3.プロバティと値の記述方法(プロバティと値の間にはコロン":"を入れ、値の終わりにはセミコロン";"を入れる)
+[セレクタ] {
+    width: 50%;
+    margin: 10px 30px;
+*/
+
+
+/* <<<タグ名>>> */
+form {
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    padding: 13% 5%;
+}
+
+/* <<<属性(class)>>> */
+
+/* ヘッダー */
+header nav {
+    background-color: rgb(30, 30, 30);
+    /*背景色*/
+    color: rgb(214, 214, 214);
+    /*要素の色*/
+    display: flex;
+    /*要素を並列に配置*/
+    justify-content: center;
+    /*要素を中央に配置*/
+    height: 50px;
+    /*ヘッダーの縦の高さ*/
+}
+
+header h1 {
+    margin: 15px 10px;
+    /*ヘッダー内のタイトルの余白*/
+}
+
+header ul {
+    display: flex;
+    /*リスト要素を並列に配置*/
+}
+
+header li {
+    padding: 15px 10px;
+    margin: 0 1px;
+    /*ヘッダー内リンクの余白*/
+}
+
+/* フッター */
+footer {
+    background-color: rgb(222, 222, 222);
+    /*背景の色*/
+    color: rgb(88, 88, 88);
+    /*要素の色*/
+    display: flex;
+    /*要素を並列に配置*/
+    justify-content: center;
+    /*要素を中央に配置*/
+    position: absolute;
+    /*位置を絶対指定*/
+    bottom: 0;
+    /*ウィンドウ下部に固定*/
+    width: 100%;
+    /*画面の横幅に合わせる*/
+}
+
+footer p {
+    margin: 0 10px;
+    /*コピーライトの余白*/
+}
+
+footer ul {
+    display: flex;
+    /*要素を並列に配置*/
+}
+
+footer li {
+    margin: 0 10px;
+    /*フッター内リンクの余白*/
+}
+
+/* メインコンテンツ */
+.login-page {
+    width: 100%;
+    padding: 4% 0 4%;
+    margin: auto;
+}
+
+.login-title {
+    margin: 20px 0 20px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.login-form {
+    padding: 50px;
+    margin: 12vh auto 5px;
+    border-radius: 5px;
+    width: 420px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    background-color: gainsboro;
+    border: 0;
+    margin: 0px 0 25px;
+    padding: 4%;
+    border-radius: 5px;
+    width: 320px;
+    box-sizing: border-box;
+    font-size: 90%;
+    text-align: left;
+    outline: solid 1px gray;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid cornflowerblue;
+}
+
+input[type="password"]:focus {
+    outline: 2px solid cornflowerblue;
+}
+
+.login-button {
+    margin: 0 250px 5px;
+    height: 30px;
+    line-height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(0, 81, 255);
+    color: #FFFFFF;
+    font-size: 20px;
+    font-size: 15px;
+}
+
+.form button {
+    background-color: aquamarine;
+    border: 0;
+    margin: 2% 0 2%;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.line {
+    margin: 20px 0 5px;
+    color: gray;
+    align-content: center;
+}
+
+.other-account {
+    margin: 10px 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+.form img {
+    height: 40px;
+}
+
+.annotation {
+    margin: 0 35.5%;
+    border: 0 520px;
+    text-align: center;
+}
+
+.privacy-link {
+    color: rgb(83, 83, 83);
+}
+
+/*<<<属性(id)>>>*/
+#icon {
+    width: 70px;
+    height: 70px;
+    text-align: left;
+}
+
+#icon-pic {
+    width: 60px;
+    height: 60px;
+}
+
+#new-page {
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+}
